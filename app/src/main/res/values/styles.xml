@@ -138,32 +138,6 @@
     </style>
     <!--   end of the input style here -->
 
-    <!--    the style for the spinner outlined-->
-    <style name="MaterialTextSpinnerStyleOutline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-        <item name="android:insetBottom">0dp</item>
-        <item name="android:insetTop">0dp</item>
-        <item name="android:bottomLeftRadius">0dp</item>
-        <item name="android:bottomRightRadius">0dp</item>
-        <item name="android:topLeftRadius">0dp</item>
-        <item name="android:topRightRadius">0dp</item>
-        <item name="boxCornerRadiusBottomEnd">0dp</item>
-        <item name="boxCornerRadiusBottomStart">0dp</item>
-        <item name="boxCornerRadiusTopEnd">0dp</item>
-        <item name="boxCornerRadiusTopStart">0dp</item>
-        <item name="boxStrokeWidth">1dp</item>
-        <item name="boxStrokeWidthFocused">1dp</item>
-        <item name="boxStrokeColor">@color/colorLightDarkHint</item>
-        <item name="hintTextColor">@color/colorLightDarkHint</item>
-        <item name="boxBackgroundColor">@color/colorWhite</item>
-        <item name="android:textColorHint">@color/colorLightDark</item>
-        <item name="hintTextAppearance">@style/HintText</item>
-        <item name="errorTextAppearance">@style/ErrorText</item>
-        <item name="android:textColor">@color/colorLightDark</item>
-        <item name="colorControlNormal">@color/colorWhite</item>
-        <item name="colorControlActivated">@color/colorLightDark</item>
-        <item name="colorControlHighlight">@color/colorLightDark</item>
-    </style>
-
     <!-- style for material button non-outlines-->
     <style name="MaterialTextButtonStyle" parent="Widget.MaterialComponents.Button">
         <item name="android:insetBottom">0dp</item>
@@ -194,6 +168,19 @@
         <item name="cornerRadius">22dp</item>
     </style>
 
+    <!-- style for material button non-outlines-->
+    <style name="ButtonWhiteRoundedStyle" parent="MaterialTextButtonStyle">
+        <item name="android:bottomLeftRadius">15dp</item>
+        <item name="android:bottomRightRadius">15dp</item>
+        <item name="android:topLeftRadius">15dp</item>
+        <item name="android:topRightRadius">15dp</item>
+        <item name="boxCornerRadiusBottomEnd">15dp</item>
+        <item name="boxCornerRadiusBottomStart">15dp</item>
+        <item name="boxCornerRadiusTopEnd">15dp</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="backgroundTint">@color/white_button_states</item>
+    </style>
+
     <!--  style for the material button outlined-->
     <style name="MaterialTextButtonOutlineStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:insetBottom">0dp</item>
@@ -202,8 +189,6 @@
         <item name="android:insetLeft">0dp</item>
         <item name="strokeWidth">0.5dp</item>
         <item name="cornerRadius">@dimen/button_radius</item>
-<!--        <item name="strokeColor">@color/primary_outline_button_states</item>-->
-<!--        <item name="android:textColor">@color/primary_outline_button_states</item>-->
     </style>
 
     <!--    the card properties and style-->
