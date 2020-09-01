@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin_medium">24dp</dimen>
+    <dimen name="activity_horizontal_hint_margin">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_splash_margin_ship">54dp</dimen>
+    <dimen name="activity_splash_margin">50dp</dimen>
+
+    <dimen name="negative_item_margin">-2dp</dimen>
+    <dimen name="card_elevation">1dp</dimen>
+    <dimen name="card_radius">0dp</dimen>
+
+    <dimen name="button_radius">10dp</dimen>
+    <dimen name="button_outline_width">0.5dp</dimen>
+    <dimen name="bar_elevation">0dp</dimen>
+    <dimen name="main_bar_elevation">6dp</dimen>
+
+</resources>
