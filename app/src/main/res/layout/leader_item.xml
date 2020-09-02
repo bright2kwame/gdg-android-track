@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MaterialCardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imageViewItem"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_width"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_toEndOf="@+id/imageViewItem"
+            android:layout_toRightOf="@+id/imageViewItem"
+            android:gravity="start"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorLightDark" />
+
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewName"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toEndOf="@+id/imageViewItem"
+            android:layout_toRightOf="@+id/imageViewItem"
+            android:gravity="start"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

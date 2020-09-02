@@ -4,7 +4,7 @@
     android:id="@+id/toolbarHome"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="@color/colorWhite"
+    android:background="@android:color/transparent"
     android:minHeight="?attr/actionBarSize"
     app:elevation="@dimen/main_bar_elevation"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorWhite"
             android:ellipsize="end"
             android:gravity="center_vertical"
             android:lines="1"

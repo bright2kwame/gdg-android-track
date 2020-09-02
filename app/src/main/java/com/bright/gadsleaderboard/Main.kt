@@ -1,5 +1,6 @@
 package com.bright.gadsleaderboard
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
@@ -38,5 +39,9 @@ class Main : AppCompatActivity() {
                     }
                 }
             }).attach()
+
+        buttonSubmit.setOnClickListener {
+            startActivity(Intent(this, SubmitProject::class.java))
+        }
     }
 }
