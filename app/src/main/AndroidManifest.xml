@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SubmitProject"></activity>
+        <activity android:name=".SubmitProject"/>
         <activity
             android:name=".Splash"
             android:configChanges="keyboardHidden|orientation|screenSize"
