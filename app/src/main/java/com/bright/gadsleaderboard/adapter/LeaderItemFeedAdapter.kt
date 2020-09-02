@@ -6,11 +6,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bright.gadsleaderboard.R
 import com.bright.gadsleaderboard.data.LeaderItem
+
 /**
  * Created by Monarchy on 09/10/2017.
  */
 
-class LeaderItemFeedAdapter(private val activity: Activity, private var items: List<LeaderItem>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class LeaderItemFeedAdapter(private val activity: Activity, private var items: List<LeaderItem>) :
+    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val constant = 100
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -46,8 +48,21 @@ class LeaderItemFeedAdapter(private val activity: Activity, private var items: L
     }
 
     // MARK: configure the device
-    private fun configureLeaderViewHolder(viewHolder: LeaderItemViewHolder, data: LeaderItem, activity: Activity) {
+    private fun configureLeaderViewHolder(
+        viewHolder: LeaderItemViewHolder,
+        data: LeaderItem,
+        activity: Activity
+    ) {
         val parent = viewHolder.itemView
+        val textViewName = viewHolder.textViewName
+        val textViewLocation = viewHolder.textViewLocation
+        val imageViewItem = viewHolder.imageViewItem
 
+        textViewName?.text = data.name
+        if (data.hours == 0) {
+            textViewLocation?.text = "${data.score} skill IQ Score, ${data.country}."
+        } else {
+            textViewLocation?.text = "${data.hours} learning hours, ${data.country}."
+        }
     }
 }

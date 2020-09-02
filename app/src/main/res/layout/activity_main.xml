@@ -31,7 +31,11 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:tabMode="fixed"
+        app:tabTextColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
+        app:tabIndicatorHeight="4dp"
+        app:tabIndicatorColor="@color/colorWhite"
         app:layout_constraintTop_toBottomOf="@+id/toolbarHome" />
 
     <androidx.viewpager2.widget.ViewPager2
