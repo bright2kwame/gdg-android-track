@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/MaterialCardViewStyle"
     android:layout_width="match_parent"
@@ -15,7 +16,7 @@
             android:id="@+id/imageViewItem"
             android:layout_width="@dimen/image_width"
             android:layout_height="@dimen/image_width"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerInside" />
 
         <TextView
             android:id="@+id/textViewName"
@@ -31,7 +32,6 @@
             android:textColor="@color/colorLightDark"
             android:textStyle="bold" />
 
-
         <TextView
             android:id="@+id/textViewLocation"
             android:layout_width="match_parent"
@@ -45,7 +45,6 @@
             android:gravity="start"
             android:text="@string/app_name"
             android:textAppearance="@style/TextAppearance.AppCompat.Small" />
-
 
     </RelativeLayout>
 </com.google.android.material.card.MaterialCardView>

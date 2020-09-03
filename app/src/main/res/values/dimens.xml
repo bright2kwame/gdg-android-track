@@ -9,8 +9,8 @@
     <dimen name="activity_splash_margin">50dp</dimen>
 
     <dimen name="negative_item_margin">-2dp</dimen>
-    <dimen name="card_elevation">4dp</dimen>
-    <dimen name="card_radius">2dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_radius">0dp</dimen>
 
     <dimen name="button_radius">10dp</dimen>
     <dimen name="button_outline_width">0.5dp</dimen>

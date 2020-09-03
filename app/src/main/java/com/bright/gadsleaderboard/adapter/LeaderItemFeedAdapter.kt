@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bright.gadsleaderboard.R
 import com.bright.gadsleaderboard.data.LeaderItem
+import com.squareup.picasso.Picasso
 
 /**
  * Created by Monarchy on 09/10/2017.
@@ -53,16 +54,21 @@ class LeaderItemFeedAdapter(private val activity: Activity, private var items: L
         data: LeaderItem,
         activity: Activity
     ) {
-        val parent = viewHolder.itemView
         val textViewName = viewHolder.textViewName
         val textViewLocation = viewHolder.textViewLocation
         val imageViewItem = viewHolder.imageViewItem
 
         textViewName?.text = data.name
         if (data.hours == 0) {
+            imageViewItem?.layoutParams?.width = 150
             textViewLocation?.text = "${data.score} skill IQ Score, ${data.country}."
         } else {
+            imageViewItem?.layoutParams?.width = 80
             textViewLocation?.text = "${data.hours} learning hours, ${data.country}."
+        }
+
+        if (data.badgeUrl.isNotEmpty()) {
+            Picasso.get().load(data.badgeUrl).into(imageViewItem)
         }
     }
 }
