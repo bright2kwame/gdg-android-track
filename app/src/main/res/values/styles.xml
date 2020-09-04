@@ -11,7 +11,7 @@
         <item name="android:textColor">@color/colorLightDark</item>
         <item name="android:textColorSecondary">@color/colorLightDark</item>
         <item name="android:textColorTertiary">@color/colorLightDark</item>
-        <item name="colorControlNormal">@color/colorLightDark</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
         <item name="actionMenuTextColor">@color/colorLightDark</item>
         <item name="colorControlActivated">@color/colorLightDarkHint</item>
         <item name="colorControlHighlight">@color/colorLightDarkHint</item>
@@ -151,7 +151,7 @@
         <item name="boxCornerRadiusBottomEnd">0dp</item>
         <item name="boxCornerRadiusBottomStart">0dp</item>
         <item name="boxCornerRadiusTopEnd">0dp</item>
-        <item name="cornerRadius">0dp</item>
+        <item name="cornerRadius">22dp</item>
         <item name="backgroundTint">@color/accent_button_states</item>
         <item name="android:textColor">@color/colorWhite</item>
     </style>
@@ -187,7 +187,8 @@
         <item name="android:insetTop">0dp</item>
         <item name="android:insetRight">0dp</item>
         <item name="android:insetLeft">0dp</item>
-        <item name="strokeWidth">0.5dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/colorAccent</item>
         <item name="cornerRadius">@dimen/button_radius</item>
     </style>
 

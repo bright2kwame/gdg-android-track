@@ -33,6 +33,7 @@ class LeaderFragment : Fragment() {
         return inflater.inflate(R.layout.leader_fragment, container, false)
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         arguments?.takeIf { it.containsKey(ARG_OBJECT) }?.apply {
             callType = getInt(ARG_OBJECT)
