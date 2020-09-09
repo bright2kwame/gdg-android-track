@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_submit_project.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.IOException
 
 class SubmitProject : AppCompatActivity() {
 
@@ -63,7 +64,11 @@ class SubmitProject : AppCompatActivity() {
         }
 
         override fun onFailure(call: Call<Void>, t: Throwable) {
-            Log.e("ERROR", t.toString())
+            if (t is IOException) {
+
+            } else {
+
+            }
             ErrorDialog().show(supportFragmentManager, tag)
         }
     }
